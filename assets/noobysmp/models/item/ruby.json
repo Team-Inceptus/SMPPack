@@ -1,0 +1,14 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "noobysmp:item/ruby"
+	},
+	"overrides": [
+	{
+		"predicate": {
+			"custom_model_data": 1
+		},
+		"model": "noobysmp:item/ruby"
+	}
+	]
+}
