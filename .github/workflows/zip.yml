@@ -30,6 +30,7 @@ jobs:
         with:
           files: assets pack.png pack.mcmeta LICENSE README.md
           dest: SMPPack.zip
+          recursive: false
       - name: Committ ZIP
         run: |
             git config --local user.name "GitHub Actions"
