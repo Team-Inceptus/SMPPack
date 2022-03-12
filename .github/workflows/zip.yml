@@ -25,10 +25,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Install ZIP
-        uses: montudor/action-zip@v1
-
-
-      - name: ZIP Files
-        run: zip -qq -r SMPPack.zip . -i assets pack.png pack.mcmeta LICENSE README.md
-        working-directory: /
+      - name: ZIP Files 
+        uses: papeloto/action-zip@v1
+        with:
+          files: assets/ pack.png pack.mcmeta LICENSE README.md
+          dest: SMPPack.zip
