@@ -39,5 +39,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: main
-        directory: docs
-        github_token: ${{ secrets.ACTION_KEY }}
+          github_token: ${{ secrets.ACTION_KEY }}
