@@ -28,7 +28,7 @@ jobs:
       - name: ZIP Files 
         uses: papeloto/action-zip@v1
         with:
-          files: assets/ pack.png pack.mcmeta LICENSE README.md
+          files: assets pack.png pack.mcmeta LICENSE README.md
           dest: SMPPack.zip
       - name: Committ ZIP
         run: |
