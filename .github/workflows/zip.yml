@@ -30,3 +30,14 @@ jobs:
         with:
           files: assets/ pack.png pack.mcmeta LICENSE README.md
           dest: SMPPack.zip
+      - name: Committ ZIP
+        run: |
+            git config --local user.name "GitHub Actions"
+            git add ./
+            git commit -m "Update Resource Pack" -a
+      - name: Push JavaDoc Changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
+        directory: docs
+        github_token: ${{ secrets.ACTION_KEY }}
