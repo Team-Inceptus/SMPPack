@@ -30,5 +30,5 @@ jobs:
 
 
       - name: ZIP Files
-        run: zip -qq -r SMPPack.zip assets pack.png pack.mcmeta LICENSE README.md
+        run: zip -qq -r SMPPack.zip . -i assets pack.png pack.mcmeta LICENSE README.md
         working-directory: /
