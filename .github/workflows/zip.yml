@@ -35,8 +35,5 @@ jobs:
             git config --local user.name "GitHub Actions"
             git add ./
             git commit -m "Update Resource Pack" -a
-      - name: Push JavaDoc Changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: main
-          github_token: ${{ secrets.ACTION_KEY }}
+      - name: Push Resource Pack
+        run: git push
