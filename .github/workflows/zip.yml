@@ -22,4 +22,4 @@ jobs:
           dest: SMPPack.zip
           recursive: false
       - name: Commit & Push ZIP
-        run: bash zip.sh
+        run: bash zip.sh ${GITHUB_SHA::7}

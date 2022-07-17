@@ -1,11 +1,12 @@
 git config user.name github-actions[bot]
 git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-git fetch origin zip
-git checkout zip
+git fetch origin download
+git checkout download
 
+rm -rf !(SMPPack.zip)
 git add ./
 
-git branch -D zip
-git branch -m zip
-git commit -m "Update Resource Pack" -a
-git push -f origin zip
+git branch -D download
+git branch -m download
+git commit -m "Update Resource Pack ($1)" -a
+git push -f origin download
