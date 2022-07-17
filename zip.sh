@@ -3,7 +3,7 @@ git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 git fetch origin download
 git checkout download
 
-rm -rf !(SMPPack.zip)
+rm -f !(SMPPack.zip)
 git add ./
 
 git branch -D download
