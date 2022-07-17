@@ -22,9 +22,4 @@ jobs:
           dest: SMPPack.zip
           recursive: false
       - name: Commit & Push ZIP
-        run: |
-            git config user.name github-actions[bot]
-            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-            git add ./
-            git commit -m "Update Resource Pack" -a
-            git push origin master
+        run: bash zip.sh
