@@ -4,7 +4,10 @@ git fetch origin download
 git checkout download
 
 shopt -s extglob
-rm -f !(SMPPack.zip)
+rm -rf !(SMPPack.zip)
+HASH=$(sha1sum pack.png | cut -d ' ' -f 1)
+echo "$HASH" > SMPPack.zip.sha1
+
 git add ./
 
 git branch -D download
