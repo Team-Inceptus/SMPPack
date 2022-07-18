@@ -5,7 +5,7 @@ git checkout download
 
 shopt -s extglob
 rm -rf !(SMPPack.zip)
-HASH=$(sha1sum pack.png | cut -d ' ' -f 1)
+HASH=$(sha1sum SMPPack.zip | cut -d ' ' -f 1)
 echo "$HASH" > SMPPack.zip.sha1
 
 git add ./
